@@ -1,6 +1,6 @@
 # cPanel
 
-This guide will enable you to install Chevereto on cPanel from scratch.
+This guide will enable you to install Chevereto-Free on cPanel from scratch.
 
 ## Database
 
@@ -16,7 +16,7 @@ Grant `ALL PRIVILEGES` on the newly created database and user.
 
 ![MySQL wizard privileges](../../src/screen/cpanel/mysql-wizard-privileges.png)
 
-## Chevereto Files
+## Chevereto-Free Files
 
 * Go to **File Manager** under **Files**.
 
@@ -26,7 +26,7 @@ Grant `ALL PRIVILEGES` on the newly created database and user.
 
 ![File Manager](../../src/screen/cpanel/file-manager.png)
 
-* Click on **Upload** and on **Select File** upload the release zip file downloaded from [chevereto.com/panel/downloads](https://chevereto.com/panel/downloads)
+* Click on **Upload** and on **Select File** upload the release zip file downloaded from [rodber/chevereto-free/releases](https://github.com/rodber/chevereto-free/releases)
 * Once uploaded, go back to the file manager at `public_html/` directory.
 * Right-click on the zip file file and select **Extract**.
 
@@ -65,17 +65,17 @@ Go to **MultiPHP Manager** and select `PHP 7.4` for your website.
 * From here you can also enable the [extensions required](requirements.md#php-extensions) by Chevereto.
 
 ::: danger PHP Extensions
-Refer to the cPanel [PHP Extensions and Applications Package](https://docs.cpanel.net/whm/software/php-extensions-and-applications-package/) and WHM [How to install a PHP extension in WHM](https://support.cpanel.net/hc/en-us/articles/360050971633) documentation if your cPanel provisioning lacks the extensions required by Chevereto.
+Refer to the cPanel [PHP Extensions and Applications Package](https://docs.cpanel.net/whm/software/php-extensions-and-applications-package/) and WHM [How to install a PHP extension in WHM](https://support.cpanel.net/hc/en-us/articles/360050971633) documentation if your cPanel provisioning lacks the extensions required by Chevereto-Free.
 :::
 
-## Install Chevereto
+## Install Chevereto-Free
 
 Go to `http://your_website/` and follow the instructions to the create the admin account.
 
 ## PHP Versioning
 
 ::: tip Did you know?
-cPanel uses root `.htaccess` file to add rules that enable to override the default cPanel PHP versioning. This may cause issues in your Chevereto installation.
+cPanel uses root `.htaccess` file to add rules that enable to override the default cPanel PHP versioning. This may cause issues in your Chevereto-Free installation.
 :::
 
 If you have PHP versioning issues make sure that the root `.htaccess` file contains the following:
@@ -99,41 +99,6 @@ If you have PHP versioning issues make sure that the root `.htaccess` file conta
 </code-group>
 
 > Note that the configuration in your system may vary. Double-check with your service provider.
-
-
-## Setup Cron on cPanel
-
-* Go to **Cron Jobs** under **Advanced**
-* Scroll to **Add New Cron Job**
-
-![File Manager Delete File](../../src/screen/cpanel/cronjob.png)
-
-* Under **Common Settings** pick `Once Per Minute (* * * * *)`
-
-The **Command** varies on each installation, you need to create your own command based on the following general form:
-
-```sh
-php-binary cli-path -C cron >/dev/null 2>&1
-```
-
-* **php-binary** Check the `PHP command examples` section under **Add New Cron Job** where you can learn about the PHP path for your system.
-* **cli-path** The Chevereto CLI path can be found on your Dashboard panel under **Installation details**.
-
-### Command examples
-
-<code-group>
-<code-block title="General">
-```sh
-/usr/local/bin/ea-php74 /home/chevereto/public_html/cli.php -C cron >/dev/null 2>&1
-```
-</code-block>
-
-<code-block title="CloudLinux">
-```sh
-/opt/alt/php74/usr/bin/php /home/chevereto/public_html/cli.php -C cron >/dev/null 2>&1
-```
-</code-block>
-</code-group>
 
 ## Setup Email
 

@@ -4,7 +4,7 @@ module.exports = {
     head: [
         ['link', {
             rel: 'icon',
-            href: `/logo.svg`
+            href: `/logo.png`
         }],
         ['link', {
             rel: 'manifest',
@@ -24,16 +24,16 @@ module.exports = {
         }],
         ['link', {
             rel: 'apple-touch-icon',
-            href: '/logo.svg'
+            href: '/logo.png'
         }],
         ['link', {
             rel: 'mask-icon',
-            href: '/logo.svg',
+            href: '/logo.png',
             color: '#3eaf7c'
         }],
         ['meta', {
             name: 'msapplication-TileImage',
-            content: '/logo.svg'
+            content: '/logo.png'
         }],
         ['meta', {
             name: 'msapplication-TileColor',
@@ -41,7 +41,7 @@ module.exports = {
         }]
     ],
     themeConfig: {
-        logo: '/logo.svg',
+        logo: '/logo.png',
         // repo: 'chevereto/chevereto',
         docsRepo: 'chevereto/v3-docs',
         docsBranch: 'main',

@@ -9,17 +9,6 @@ You can ignore using this file as you can pass `-e` variables on container run.
 ```php
 <?php
 $settings = [
-    'asset_storage_account_id' => '',
-    'asset_storage_account_name' => '',
-    'asset_storage_bucket' => '',
-    'asset_storage_key' => '',
-    'asset_storage_name' => 'assets',
-    'asset_storage_region' => '',
-    'asset_storage_secret' => '',
-    'asset_storage_server' => '',
-    'asset_storage_service' => '',
-    'asset_storage_type' => 'local',
-    'asset_storage_url' => '',
     'db_driver' => 'mysql',
     'db_host' => 'localhost',
     'db_name' => 'chevereto',

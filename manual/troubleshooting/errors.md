@@ -1,20 +1,6 @@
 # Errors
 
-Application errors can be caused by several causes and understanding in which layer the error is affecting the system will drive towards an easy outcome. Kindly understand that in multi-layered systems like Chevereto is crucial to understand when an error is caused by Chevereto or when the problem is elsewhere.
-
-## Error Id
-
-Chevereto logs all error events under a unique **errorId** associated with the error stack trace and debug information.
-
-```plain
-<some code>: ** errorId #dacb7f96fb9fd28d **
-```
-
-Application errors in Chevereto **are hidden by default** on production mode, the only public part is the errorId. Errors won't be displayed **for security reasons** and the errorId is a randomly generated unique identifier per error event.
-
-::: tip Note: A error id is not an error message
-The error id exists so you can lookup for that error in your configured system debug device.
-:::
+Application errors can be caused by several causes and understanding in which layer the error is affecting the system will drive towards an easy outcome. Kindly understand that in multi-layered systems like Chevereto-Free is crucial to understand when an error is caused by Chevereto-Free or when the problem is elsewhere.
 
 ## Stack Trace
 
@@ -37,11 +23,11 @@ Stack trace:
 #3 /index.php(20): include_once('/app/loader.php')
 ```
 
-## It is Chevereto related?
+## It is Chevereto-Free related?
 
-Chevereto exists on top of many technologies working at the same time and any component of this stack could fail.
+Chevereto-Free exists on top of many technologies working at the same time and any component of this stack could fail.
 
-It is likely that Chevereto **won't cause** the following issues:
+It is likely that Chevereto-Free **won't cause** the following issues:
 
 * Unable to connect (network issues)
 * MySQL server gone
@@ -70,7 +56,7 @@ Once you get the error you can solve the situation in your own context or use th
 Aw, snap! Internal Server Error - Check your error_log or enable debug_mode = 3
 ```
 
-This message indicates an error caught by Chevereto, but hidden due to **production error reporting** settings. To actually know what is going on you have to [debug](./debug.md).
+This message indicates an error caught by Chevereto-Free, but hidden due to **production error reporting** settings. To actually know what is going on you have to [debug](./debug.md).
 
 ### Database messages
 
@@ -78,9 +64,9 @@ This message indicates an error caught by Chevereto, but hidden due to **product
 If at `/install` you see a plain text message starting with `#Dumped update query` it means that you **MUST** manual run the printed queries in your MySQL console.
 :::
 
-If [dump update query](../../settings/system.md#dump-update-query) setting is **enabled** or if the images table has **more than 1,000,000** records, Chevereto will dump the SQL statements required to carry the database update which must run direct in the MySQL console.
+If [dump update query](../../settings/system.md#dump-update-query) setting is **enabled** or if the images table has **more than 1,000,000** records, Chevereto-Free will dump the SQL statements required to carry the database update which must run direct in the MySQL console.
 
-Chevereto has this functionality to minimize breaking your large database as the process could take several minutes to complete.
+Chevereto-Free has this functionality to minimize breaking your large database as the process could take several minutes to complete.
 
 When manual updating the database keep the following considerations:
 

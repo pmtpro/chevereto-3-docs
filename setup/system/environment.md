@@ -1,13 +1,13 @@
 # System Environment
 
-These are the system level settings that can be used to tweak Chevereto provisioning.
+These are the system level settings that can be used to tweak Chevereto-Free provisioning.
 
 ## Passing values
 
-To pass settings to Chevereto is recommended to use system level environment variables.
+To pass settings to Chevereto-Free is recommended to use system level environment variables.
 
 ::: tip Settings file
-If is not possible to use environment variables you can use the [settings file](../server/settings-file.md) to configure the Chevereto variables.
+If is not possible to use environment variables you can use the [settings file](../server/settings-file.md) to configure the Chevereto-Free variables.
 :::
 
 ### Apache HTTP Web Server (PHP module)
@@ -25,28 +25,6 @@ For these you will be running PHP CLI so you should be able to pass those at `ph
 ### Container
 
 Pass the environment variables to the container run command or at `docker compose` layer.
-
-## Assets variables
-
-Environment variables for storing assets that can be uploaded to any of the supported external storage APIs.
-
-Note that assets refers to user provided assets such as avatars and backgrounds, also website graphics like logos and homepage covers.
-
-Check [External storage](../../settings/external-storage.md) for adding external storage servers for user content uploads.
-
-| Variable                             | Setting Key                | Example        |
-| ------------------------------------ | -------------------------- | -------------- |
-| CHEVERETO_ASSET_STORAGE_ACCOUNT_ID   | asset_storage_account_id   | 123            |
-| CHEVERETO_ASSET_STORAGE_ACCOUNT_NAME | asset_storage_account_name | account_name   |
-| CHEVERETO_ASSET_STORAGE_BUCKET       | asset_storage_bucket       | bucket         |
-| CHEVERETO_ASSET_STORAGE_KEY          | asset_storage_key          | key            |
-| CHEVERETO_ASSET_STORAGE_NAME         | asset_storage_name         | assets         |
-| CHEVERETO_ASSET_STORAGE_REGION       | asset_storage_region       | us-west-2      |
-| CHEVERETO_ASSET_STORAGE_SECRET       | asset_storage_secret       | secret         |
-| CHEVERETO_ASSET_STORAGE_SERVER       | asset_storage_server       | server         |
-| CHEVERETO_ASSET_STORAGE_SERVICE      | asset_storage_service      | service        |
-| CHEVERETO_ASSET_STORAGE_TYPE         | asset_storage_type         | s3             |
-| CHEVERETO_ASSET_STORAGE_URL          | asset_storage_url          | `<url>/bucket` |
 
 ## Database variables
 

@@ -6,7 +6,7 @@
 | ------- | --- |
 | 3.20    | 7.4 |
 
-Chevereto is [PHP](https://php.net/) software, it has been designed using:
+Chevereto-Free is [PHP](https://php.net/) software, it has been designed using:
 
 * [PHP packages](https://deb.sury.org/) from Ondřej Surý.
 * [PHP extensions](https://www.php.net/manual/en/extensions.membership.php) provided by [PECL](https://pecl.php.net/).
