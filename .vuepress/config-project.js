@@ -4,7 +4,7 @@ module.exports = {
     head: [
         ['link', {
             rel: 'icon',
-            href: `/logo.png`
+            href: `/icons/android-chrome-512x512.png`
         }],
         ['link', {
             rel: 'manifest',
@@ -24,16 +24,16 @@ module.exports = {
         }],
         ['link', {
             rel: 'apple-touch-icon',
-            href: '/logo.png'
+            href: '/icons/android-chrome-512x512.png'
         }],
         ['link', {
             rel: 'mask-icon',
-            href: '/logo.png',
+            href: '/icons/android-chrome-512x512.png',
             color: '#3eaf7c'
         }],
         ['meta', {
             name: 'msapplication-TileImage',
-            content: '/logo.png'
+            content: '/icons/android-chrome-512x512.png'
         }],
         ['meta', {
             name: 'msapplication-TileColor',
@@ -42,23 +42,23 @@ module.exports = {
     ],
     themeConfig: {
         logo: '/logo.png',
-        // repo: 'chevereto/chevereto',
-        docsRepo: 'chevereto/v3-docs',
+        repo: 'rodber/chevereto-free',
+        docsRepo: 'rodber/chevereto-free-docs',
         docsBranch: 'main',
         smoothScroll: true,
         editLinks: true,
         lastUpdated: true,
-        algolia: {
-            apiKey: '250992199b7863078c8399e2638107af',
-            indexName: 'chevereto',
-        }
+        // algolia: {
+        //     apiKey: '250992199b7863078c8399e2638107af',
+        //     indexName: 'chevereto',
+        // }
     },
     plugins: [
         [
-            '@vuepress/google-analytics',
-            {
-            'ga': 'UA-25384365-3'
-            }
+            // '@vuepress/google-analytics',
+            // {
+            // 'ga': 'UA-25384365-3'
+            // }
         ]
     ]
 };
