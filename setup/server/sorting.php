@@ -7,5 +7,4 @@ return [
     'settings-file.md',
     'post-install.md',
     'updating.md',
-    'upgrading.md',
 ];
