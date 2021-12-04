@@ -2,6 +2,6 @@
 
 return [
     'README.md' => 'Introduction',
-    'deploy.md' => 'Deploy',
+    'upgrading.md' => 'Upgrading',
     'status.md' => 'Status',
 ];

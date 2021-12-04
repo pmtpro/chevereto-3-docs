@@ -3,5 +3,5 @@
 return [
     'README.md',
     'status.md',
-    'deploy.md',
+    'upgrading.md',
 ];
