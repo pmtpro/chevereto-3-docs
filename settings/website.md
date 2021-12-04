@@ -83,28 +83,6 @@ Random allows to randomly show a public image. It enables `?random` to fetch a r
 | Enabled  | Enable random button  |
 | Disabled | Disable random button |
 
-## Likes
-
-Toggles the likes functionality.
-
-Likes allow users to like content. It also generates "liked" listings.
-
-| Value    | Effect        |
-| -------- | ------------- |
-| Enabled  | Enable likes  |
-| Disabled | Disable likes |
-
-## Followers
-
-Toggles the followers functionality.
-
-Followers allow users to follow each other. It also enables the "following" listing for each user.
-
-| Value    | Effect            |
-| -------- | ----------------- |
-| Enabled  | Enable followers  |
-| Disabled | Disable followers |
-
 ## Website mode
 
 Determines the website mode. It will affect how your installation works.
