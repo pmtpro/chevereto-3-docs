@@ -39,6 +39,20 @@ When providing files to your server make sure that the files `owner:group` permi
 
 You will require to provide the Chevereto-Free software application files to your server.
 
+### Composer-based installation
+
+* Requires [Composer](https://getcomposer.org)
+
+```sh
+composer create-project rodber/chevereto-free . \
+    --repository='{
+        "url": "https://github.com/rodber/chevereto-free.git",
+        "type": "vcs"
+    }' \
+    --remove-vcs \
+    --ignore-platform-reqs
+```
+
 ### Zip package
 
 * Upload the [latest release](https://github.com/rodber/chevereto-free/releases) package to your server (usually in the `public_html` folder)
