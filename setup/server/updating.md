@@ -1,12 +1,15 @@
 # Server Updating
 
-This section outlines the update process required to upgrade from old releases (V1.X).
-
 ::: danger Checklist
 * Check that your server meets the [requirements](../server/requirements.md) for running the target release to update.
 * Make sure to have a recent backup of your database and your code modifications (if any).
 * After the update you will need to re-apply your modifications.
 :::
+
+👉 Keep the application files updated. You can update either by:
+
+* Using the built-in updater at `/dashboard` > Click **check for updates**
+* Downloading a [Release](https://github.com/rodber/chevereto-free/releases) and **Extract to** the application filesystem
 
 ## HTTP update
 
