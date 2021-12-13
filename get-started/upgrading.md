@@ -28,8 +28,8 @@ Using Composer the update carried in CLI context. It requires:
 
 * Run the following command from your **Chevereto-Free project folder**:
 
-### Debian
-
+<code-group>
+<code-block title="Debian">
 ```sh
 LICENSE=YOUR_V3_LICENSE_KEY &&
 curl -f -SOJL \
@@ -42,3 +42,5 @@ curl -f -SOJL \
 && chown www-data: . -R \
 && php cli.php -C install
 ```
+</code-block>
+</code-group>
