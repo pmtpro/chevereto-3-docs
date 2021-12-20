@@ -1,6 +1,6 @@
 # Debug
 
-Debug enables to dump information about errors that may be affecting the software functionality. If Chevereto isn't working properly you must start debugging it.
+Debug enables to dump information about errors that may be affecting the software functionality. If Chevereto-Free isn't working properly you must start debugging it.
 
 ## Configuring debug
 
@@ -43,7 +43,7 @@ $settings['error_log'] = 'log_device';
 
 ## Accessing logs
 
-To access logs you will need to know first the location for those. If you don't configure debug Chevereto will follow the default [error_log](https://www.php.net/manual/errorfunc.configuration.php#ini.error-log) handling configured for your PHP installation.
+To access logs you will need to know first the location for those. If you don't configure debug Chevereto-Free will follow the default [error_log](https://www.php.net/manual/errorfunc.configuration.php#ini.error-log) handling configured for your PHP installation.
 
 ### Where are the default logs?
 

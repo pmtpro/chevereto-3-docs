@@ -8,7 +8,7 @@
 
 ## Reference
 
-* `SOURCE` is the absolute path to the cloned chevereto project
+* `SOURCE` is the absolute path to the cloned Chevereto-Free project
 * You need to replace `SOURCE=~/git/rodber/chevereto-free` with your own path
 * `SOURCE` will be mounted at `/var/www/source/` inside the container
 * Chevereto will be available at [localhost:8910](http://localhost:8910)
@@ -47,7 +47,7 @@ docker-compose \
 
 ## Start
 
-Run this command to start Chevereto if stopped.
+Run this command to start Chevereto-Free if stopped.
 
 ```sh
 SOURCE=~/git/rodber/chevereto-free \
@@ -59,7 +59,7 @@ docker-compose \
 
 ## Down (uninstall)
 
-Run this command to down Chevereto (stop containers, remove networks and volumes created by it).
+Run this command to down Chevereto-Free (stop containers, remove networks and volumes created by it).
 
 ```sh
 SOURCE=~/git/rodber/chevereto-free \
