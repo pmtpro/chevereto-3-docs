@@ -28,7 +28,7 @@ docker-compose \
 
 ## Start
 
-Run this command to start Chevereto if stopped.
+Run this command to start Chevereto-Free if stopped.
 
 ```sh
 docker-compose \
@@ -39,7 +39,7 @@ docker-compose \
 
 ### Down (uninstall)
 
-Run this command to down Chevereto (stop containers, remove networks and volumes created by it).
+Run this command to down Chevereto-Free (stop containers, remove networks and volumes created by it).
 
 ```sh
 docker-compose \

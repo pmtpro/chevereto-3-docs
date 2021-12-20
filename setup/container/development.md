@@ -23,7 +23,7 @@ Alter `SOURCE` in the commands below to reflect your project path.
 
 ## Up
 
-Run this command to spawn (start) Chevereto Installer.
+Run this command to spawn (start) Chevereto-Free.
 
 ```sh
 SOURCE=~/git/rodber/chevereto-free \
@@ -35,7 +35,7 @@ docker-compose \
 
 ## Stop
 
-Run this command to stop Chevereto Installer.
+Run this command to stop Chevereto-Free.
 
 ```sh
 SOURCE=~/git/rodber/chevereto-free \
