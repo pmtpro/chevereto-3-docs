@@ -7,7 +7,7 @@ Application errors can be caused by several causes and understanding in which la
 Code below shows an example error stack trace. It describes the error, provide its unique errorId and it shows the call stack.
 
 ```txt
-Aw, snap! Internal Server Error [debug @ error_log] - https://chv.to/v3/debug
+Aw, snap! Internal Server Error [debug @ error_log] - https://chevereto.com/go/v3debug
 
 ** errorId #dacb7f96fb9fd28d **
 >> PDOException [2002]: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Name or service not known
